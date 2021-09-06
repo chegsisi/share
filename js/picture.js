@@ -30,4 +30,4 @@ function loadImg() {
   }
 }
 // 监听页面滚动 进行防抖处理 当不停滚动的时候不立即调用函数而是等待100ms再调用，减少调用的频率
-window.addEventListener('scroll', debounce(loadImg, 100));
+// window.addEventListener('scroll', debounce(loadImg, 100));
