@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">  
+  <link rel="stylesheet" href="./font/iconfont.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+  <!-- 头部 -->
+  <nav>
+    <div class="left"></div>
+    <div class="center">
+      <ul>
+        <li>首页</li>
+      </ul>
+    </div>
+    <div class="right">
+      <!-- <span class="iconfont icon-sousuo"></span> -->
+    </div>
+  </nav>
+  <!-- 主体部分 -->
+  <div id="center">
+ <!-- 搜索框 -->
+ <div class="search">
+  <input type="text" placeholder="输入关键词搜索">
+  <img src="./images/search.svg" alt="">
+</div>
+<!-- 轮播图 -->
+<div class="banner">
+  <div class="swiper-container" id="swiper1">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/pic1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/pic2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/pic3.jpg" alt=""></div>
+    </div>
+  </div>
+</div>
+ <!--卡片  -->
+ <div id="card">
+  <div class="item"><img src="./images/viedo.svg" alt=""><span>视频</span></div>
+  <div class="item"><img src="./images/music.svg" alt=""><span>音乐</span></div>
+  <div class="item"><img src="./images/photo.svg" alt=""><span>摄影</span></div>
+  <div class="item"><img src="./images/channel.svg" alt=""><span>直播</span></div>
+</div>
+<!-- 下拉菜单 -->
+<div id="dropdown">
+  <div class="title">
+    <span>我的频道</span>
+    <span>点击进入频道</span>
+    <em class="iconfont icon-jiantou-shang" id="pull"></em>
+  </div>
+   <ul id="my-channel">
+     <li>推荐</li>
+     <li>视频</li>
+     <li>直播</li>
+     <li>美食</li>
+     <li>音乐</li>
+     <li>护肤</li>
+     <li>Vlog</li>
+     <li>运动健身</li>
+     <li>时尚 </li>
+     <li>摄影</li>
+     <li>发型</li>
+     <li>彩妆</li>
+     <li>旅行</li>
+     <li>搞笑</li>
+     <li>学习</li>
+     <li>萌宠</li>
+     <li>影视综艺</li>
+     <li>游戏</li>
+     <li>情感</li>
+     <li>职场</li>
+     <li>家居家装</li>
+     <li>绘画</li>
+     <li>美甲</li>
+   </ul>
+   <div class="title">
+    <span>推荐频道</span>
+    <span>点击添加频道</span>
+  </div>
+  <ul id="re-channel">
+    <li>+明星</li>
+    <li>+手工</li>
+    <li>+文具手账</li>
+    <li>+母婴</li>
+    <li>+萌娃</li>
+    <li>+科技数码</li>
+    <li>+汽车</li>
+    <li>+潮鞋</li>
+  </ul>
+
+</div>
+<!-- 二级导航 -->
+<div id="second-nav">
+  <div class="swiper-container" id="swiper2">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <ul id="nav-list" class="ul1">
+            <li class="active" id="first-li">推荐</li>
+            <li>视频</li>
+            <li>直播</li>
+            <li>美食</li>
+            <li>音乐</li>
+            <li>护肤</li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul id="nav-list" class="ul1">
+            <li>Vlog</li>
+            <li>运动健身</li>
+            <li>时尚 </li>
+            <li>摄影</li>
+            <li>发型</li>
+            <li>彩妆</li>
+            <li>旅行</li>
+            <li>搞笑</li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul id="nav-list" class="ul1">
+            <li>学习</li>
+            <li>萌宠</li>
+            <li>影视综艺</li>
+            <li>游戏</li>
+            <li>情感</li>
+            <li>职场</li>
+            <li>家居家装</li>
+            <li>绘画</li>
+            <li>美甲</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <span class="iconfont icon-jiantou_down" id="drop"></span>
+</div>
+<div id="main">
+</div>
+  </div>
+ 
+  <!-- 底部栏 -->
+  <footer>
+    <div class="item">
+      <img src="./images/homeActive.svg" alt="" class="showImg">
+      <a class="active">首页</a>
+    </div>
+    <div class="item">
+      <img src="./images/mess.svg" class="showImg">
+      <a>消息</a>
+    </div>
+    <div class="item">
+      <img src="./images/profile.svg" class="showImg">
+      <a>我的</a>
+    </div>
+ </footer>
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script  src="https://lib.baomitu.com/Swiper/2.7.6/idangerous.swiper.min.js"></script>
+
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script> -->
+<script src="./js/swiper.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/pictureData.js"></script> 
+<script src="./js/picture.js"></script>
+<script src="./js/index.js"></script>
+</html>

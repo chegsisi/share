@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./font/iconfont.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/note.css">
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <nav>
+      <div class="left">
+       <img id="back" src="./images/left.svg" alt="">
+      </div>
+      <div class="center">
+        <ul>
+          <li>发表笔记</li>
+        </ul>
+      </div>
+      <div class="right">
+        <!-- <span class="iconfont icon-sousuo"></span> -->
+      </div>
+    </nav>
+     <!-- 下拉菜单 -->
+   <div id="dropdown">
+    <div class="title">
+      <span>我的频道</span>
+      <span>点击进入频道</span>
+      <em class="iconfont icon-jiantou-shang" id="pull"></em>
+    </div>
+     <ul id="my-channel">
+       <li>推荐</li>
+       <li>视频</li>
+       <li>直播</li>
+       <li>美食</li>
+       <li>音乐</li>
+       <li>护肤</li>
+       <li>Vlog</li>
+       <li>运动健身</li>
+       <li>时尚 </li>
+       <li>摄影</li>
+       <li>发型</li>
+       <li>彩妆</li>
+       <li>旅行</li>
+       <li>搞笑</li>
+       <li>学习</li>
+       <li>萌宠</li>
+       <li>影视综艺</li>
+       <li>游戏</li>
+       <li>情感</li>
+       <li>职场</li>
+       <li>家居家装</li>
+       <li>绘画</li>
+       <li>美甲</li>
+     </ul>
+     <div class="title">
+      <span>推荐频道</span>
+      <span>点击添加频道</span>
+    </div>
+    <ul id="re-channel">
+      <li>+明星</li>
+      <li>+手工</li>
+      <li>+文具手账</li>
+      <li>+母婴</li>
+      <li>+萌娃</li>
+      <li>+科技数码</li>
+      <li>+汽车</li>
+      <li>+潮鞋</li>
+    </ul>
+
+   </div>
+    <div id="note">
+      <div class="fileBox">
+        <!-- <button class="fileButton">上传图片</button> -->
+        <div class="fileButton"><img src="./images/add1.svg"></div>
+        <input type="file" class="file1">  
+        <img class="fileName" src="./images/white.png" alt="">
+      </div>
+      <input id="title" type="text" placeholder="填写标题会有更多赞哦">
+      <input id="content" type="text" placeholder="添加正文">
+      <div class="select" id="change">
+        <span>选择频道</span>
+        <span id="text"></span>
+        <img src="./images/right.svg" alt="">
+      </div>
+      
+    </div>
+    <button id="publish">发表笔记</button>
+   
+  
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/noteList.js"></script>
+<script src="./js/note.js"></script>
+</html>

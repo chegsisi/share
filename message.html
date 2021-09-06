@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/message.css">
+
+</head>
+<body>
+   <!-- 头部 -->
+   <nav>
+    <div class="left"></div>
+    <div class="center">
+      <ul>
+        <li>消息</li>
+      </ul>
+    </div>
+    <div class="right">
+      开启聊天
+    </div>
+  </nav>
+  <!-- 通知 -->
+  <!-- <div class="notice">
+    <span>开启推送通知，及时查收消息</span>
+    <button>开启</button>
+  </div> -->
+  <div id="main">
+    <div class="social">
+      <div class="s-item"><img src="./images/heart.svg" alt=""><div class="text">赞和收藏</div></div>
+      <div class="s-item"><img src="./images/focus.svg" alt=""><div class="text">新增关注</div></div>
+      <div class="s-item"><img src="./images/comment.svg" alt=""><div class="text">评论和@</div></div>
+    </div>
+    <!-- 信息 -->
+    <div class="title">
+      <img src="./images/note.svg" alt="">
+      <span>全部消息<em class="num"></em></span>
+      <img src="./images/bottom.svg" alt="">
+    </div>
+    <div id="mess">
+    </div>
+  </div>
+  
+    <!-- 底部栏 -->
+    <footer>
+      <div class="item"><img src="./images/home.svg"><a>首页</a></div>
+      <div class="item"><img src="./images/messActive.svg"><a class="active">消息</a></div>
+      <div class="item"><img src="./images/profile.svg"><a>我的</a></div>
+   </footer>
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/cookie.js"></script>
+<script src="./js/messData.js"></script>
+<script src="./js/message.js"></script>
+</html>

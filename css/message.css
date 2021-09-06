@@ -1,0 +1,94 @@
+.notice {
+  top: 4.4rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  display: flex;
+  position: relative;
+}
+.notice span {
+  display: block;
+  margin-left: 1rem;
+}
+.notice button {
+  width: 4rem;
+  height: 2rem;
+  border: 0.1rem solid #666;
+  border-radius: 0.6rem;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+#main {
+  position: relative;
+  top: 4.4rem;
+  bottom: 4.9rem;
+}
+#main .title {
+  z-index: 999;
+  padding-left: 1rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+#main .title span {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+#main .title span em {
+  font-size: 1.6rem;
+  color: #666;
+  margin-right: 1rem;
+}
+#main .social {
+  display: flex;
+  height: 8rem;
+  margin-top: 2rem;
+}
+#main .social .s-item {
+  flex: 1;
+  text-align: center;
+}
+#main .social .text {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: #000;
+}
+#main #mess {
+  margin-top: 1rem;
+}
+#main #mess .m-item {
+  width: 100%;
+  display: flex;
+  height: 6rem;
+  font-size: 1.4rem;
+  color: #666;
+  align-items: center;
+  margin-top: 1rem;
+}
+#main #mess .m-item .image {
+  width: 7rem;
+  text-align: center;
+}
+#main #mess .m-item .image img {
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
+}
+#main #mess .m-item .text {
+  flex: 1;
+}
+#main #mess .m-item .text .name {
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#main #mess .m-item .time {
+  width: 14rem;
+  text-align: right;
+}

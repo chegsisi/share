@@ -1,0 +1,113 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+}
+#login{
+  position: fixed;
+  z-index: 999;
+  width: 70%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+}
+.login-center{
+  width: 100%;
+}
+.login-title{
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.8rem;
+}
+.login-title ul{
+  display: flex;
+
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  font-size: 0;
+  visibility: hidden;
+}
+.login-title .alist li.active{
+  color:rgb(0, 150, 136); 
+  border-bottom: 0.3rem solid rgb(0, 150, 136);
+}
+.alsit-list li:first-child{
+  display: block;
+}
+.alsit-list li{
+ display: none;
+}
+.login-title ul li{
+  width: 10rem;
+  text-align: center;
+  margin-right: 1rem;
+}
+.form{
+  margin-top: 1rem;
+}
+.l-r-form{
+  display: none;
+} 
+.form div:first-child{
+  display: block;
+}
+.l-r-form form input{
+  padding-left: 1rem;
+  /* width: 26rem; */
+  width: 90%;
+  height: 3.4rem;
+  border: 0.1rem solid #ccc;
+  margin-top: 1rem;
+}
+.l-r-form form span{
+  /* height: 20px;
+  line-height: 20px;
+  padding-left: 10px; */
+  color: #42b983;
+  font-size: 1.4rem;
+}
+.l-r-form button{
+  width: 8rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  background-color: rgb(0, 150, 136);
+  color: #fff;
+  margin-top: 1rem;
+} 
+.l-r-form span a{
+  color: #333;
+  margin-left: 2rem;
+}
+
+#code input{
+  width: 30%;
+  /* width: 8rem; */
+  margin-right: 1rem;
+}
+#code button{
+  width: 50%;
+  /* width: 14rem; */
+  height: 3.4rem;
+  line-height: 3.4rem;
+}
+
