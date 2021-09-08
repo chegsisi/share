@@ -17,7 +17,6 @@ body {
   height: 3rem;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
   border: 1px solid #eee;
   border-radius: 1rem;
   margin-top: 1rem;
@@ -127,26 +126,23 @@ body {
   color: #000;
   z-index: 2;
 }
-#center #second-nav #swiper2 {
-  overflow: hidden;
+#center #second-nav ul {
   flex: 1;
-}
-#center #second-nav #swiper2 ul {
-  width: 30rem;
   height: 3.4rem;
   display: flex;
-  overflow: hidden;
 }
-#center #second-nav #swiper2 ul li {
-  width: 10rem;
+#center #second-nav ul li {
+  flex: 1;
   text-align: center;
   font-size: 1.6rem;
 }
-#center #second-nav #swiper2 ul .active {
+#center #second-nav ul .active {
   color: #6dd5fa;
 }
 #center #second-nav span {
   width: 4rem;
+  position: relative;
+  right: 1rem;
   font-size: 3rem;
   text-align: left;
 }

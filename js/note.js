@@ -49,7 +49,7 @@ $(function () {
       totalList.push(newNote);
       localStorage.setItem("list", JSON.stringify(totalList));
       console.log(totalList);
-      window.location.href = '/profile.html';
+      window.location.href = './profile.html';
     } else {
       alert('请正确填写')
     }

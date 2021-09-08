@@ -9,7 +9,6 @@ $(function () {
     $('.tab ul li').css('color', '#fff')
     $('footer a').css('color', '#fff')
   }
-  let totalList = localStorage.getItem("list");
   $('#login').click(function () {
     window.location.href = "./login.html"
   })
@@ -76,14 +75,18 @@ $(function () {
     noteImg = "./images/avat.svg";
   }
   // 展示笔记
-  if (totalList != null && totalList.length != 0) {
-    let list = JSON.parse(totalList);
-    console.log(list);
-    for (let i = 0; i < list.length; i++) {
-      let div = ' <div class="item"><img src="' + list[i].image + '" alt=""><p>' + list[i].title + '</p><div class="info"><img src="' + noteImg + '" alt="">' + uName + '<div class="heart"><em class="iconfont icon-changyongicon-"></em><span>赞</span> </div></div>'
-      $('.notelist').append(div);
+  let totalList = localStorage.getItem("list");
+  let list = JSON.parse(totalList);
+  function showNote(){
+    if (totalList != null && totalList.length != 0) {
+      console.log(list);
+      for (let i = 0; i < list.length; i++) {
+        let div = '<div class="item" data-titile="' +list[i].title+ '"><img src="' + list[i].image + '" alt=""><p>' + list[i].title + '</p><div class="info"><img src="' + noteImg + '" alt="">' + uName + '<div class="heart"><em class="iconfont icon-changyongicon-"></em><span>赞</span> </div></div>'
+        $('.notelist').append(div);
+      }
     }
   }
+  showNote();
   // 选项卡切换
   $(".tab ul").on('click', 'li', function () {
     $(this).addClass("tab-show").siblings().removeClass("tab-show");
@@ -141,5 +144,11 @@ $(function () {
     localStorage.removeItem('mode')
     window.location.href = './profile.html';
   })
+  // 笔记详情
+  $(".notelist").on("click", '.item', function () {
+    window.location.href='./detail.html';
+    localStorage.setItem('noteTitle',$(this).attr('data-titile'));
+  });
 
 })
+

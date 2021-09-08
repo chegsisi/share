@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "200845",
+      "name": "3.1收藏",
+      "font_class": "31shoucang",
+      "unicode": "f01ab",
+      "unicode_decimal": 983467
+    },
+    {
+      "icon_id": "201574",
+      "name": "3.1-消息",
+      "font_class": "31xiaoxi",
+      "unicode": "f0200",
+      "unicode_decimal": 983552
+    },
+    {
       "icon_id": "1761536",
       "name": "搜索",
       "font_class": "sousuo",

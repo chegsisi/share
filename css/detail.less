@@ -1,0 +1,153 @@
+nav{
+  background-color: #fff;
+  box-shadow: 0 1px 3px #eee;
+  .left{
+    #u-img{
+      width: 3.6rem;
+      height: 3.6rem;
+      border-radius: 50%;
+    }
+  }
+  .right{
+    text-align: right;
+    img{
+     vertical-align: middle;
+    }
+   
+  }
+}
+
+#center{
+  width: 100%;
+  position: absolute;
+  top:4.4rem;
+  bottom: 4.9rem;
+  #detail{
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+    img{
+      width: 100%;
+    }
+    .title{
+      margin-left: 1rem;
+      height: 4rem;
+      line-height: 4rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .content{
+      margin-left: 1rem;
+      font-size: 1.6rem;
+    }
+  }
+  #comment{
+    width: 100%;
+    .total{
+      height: 4rem;
+      color: #666;
+      font-size: 1.6rem;
+      margin-left: 1rem;
+      line-height: 4rem;
+    }
+    .c-list{
+      .c-item{
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        font-size: 1.6rem;
+        height: 6rem;
+        img{
+          width: 3.6rem;
+          height: 3.6rem;
+          border-radius: 50%;
+        }
+        .c-text{
+          flex: 1;
+          color: #000;
+          .c-name{
+            color: #666;
+          }
+          margin-left: 1rem;
+        }
+        .c-heart{
+          width: 6rem;
+          height: 6rem;
+          text-align: center;
+          line-height: 6rem;
+          span{
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+#discuss{
+  width: 100%;
+  height: 4.9rem;
+  box-shadow: 0 -1px 3px #eee;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  background-color: #fff;
+  input{
+    margin-left: 1rem;
+    padding-left: 3rem;
+    height: 3rem;
+    width: 13rem;
+    border: 1px solid #eee;
+    border-radius: 1.5rem;
+    background-color: #eee;
+    background:url('../images/write.svg') no-repeat 1rem;
+  }
+  .icon{
+    flex: 1;
+    display: flex;
+    span{
+
+      flex: 1;
+      text-align: center;
+      em{
+        font-size: 3rem;
+      }
+      a{
+        position: relative;
+        bottom:0.7rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+.bottom-toast{
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 -1px 3px #eee;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 10000;
+  border-radius: 2rem;
+  // height: 16rem;
+  p{
+    text-align: center;
+  }
+  ul{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  #close{
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: #6dd5fa;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+}
